@@ -1,0 +1,4 @@
+[corda]
+%{for index, name in corda-name ~}
+${name} ansible_host=${corda-ip[index]} # ${corda-id[index]}
+%{ endfor ~}

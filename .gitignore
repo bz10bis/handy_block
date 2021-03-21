@@ -1,0 +1,9 @@
+secrets/
+venv/
+.idea
+.terraform/
+*.info
+*.hcl
+*.tfsate
+*.backup
+ansible-corda/files/
