@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">Profile</h1>
+<img src="{{ user.avatar(128) }}" alt="avatar pic"></td>
+<h2>User: {{ user.username }}</h2></td>
+<hr>
+{% for plan in plans %}
+<p>{{ plan.created_by }} : <b>{{ plan.body }}</b></p>
+{% endfor %}
+<hr>
+<h2>Secrets</h2>
+{% for secret in secrets %}
+<p>name: {{ secret.name }}</p>
+<p>type: {{ secret.stype }}</p>
+{% endfor %}
+<hr>
+<h2>Deployed</h2>
+
+
+{% endblock %}
